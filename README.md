@@ -6,7 +6,7 @@
 
 ## Генерация формы
 
-Пример: https://github.com/VSKut/WebMoney-Merchant/examples/form.php
+Пример: https://github.com/VSKut/WebMoney-Merchant/blob/master/examples/form.php
 
 **Подключаем класс любым доступным образом**
 ```php
@@ -97,7 +97,7 @@ echo $html;
 
 ## RESULT обработчик
 
-Пример: https://github.com/VSKut/WebMoney-Merchant/examples/result.php
+Пример: https://github.com/VSKut/WebMoney-Merchant/blob/master/examples/result.php
 
 **Подключаем класс любым доступным образом**
 ```php
