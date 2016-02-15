@@ -1,9 +1,10 @@
 <?php
+namespace VSKut\WebMoney_Merchant;
+
 /**
  * Class MerchantForm
  *
  * @author VSKut <me@vskut.ru>
- * @date
  */
 class WMMerchantForm
 {
@@ -157,7 +158,5 @@ class WMMerchantForm
 
         return $html;
     }
-
-
 
 }

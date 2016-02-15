@@ -1,9 +1,10 @@
 <?php
+namespace VSKut\WebMoney_Merchant;
+
 /**
  * Class MerchantCallback
  *
  * @author VSKut <me@vskut.ru>
- * @date
  */
 class WMMerchantCallback
 {
@@ -141,7 +142,6 @@ class WMMerchantCallback
             return true;
         }
 
-
         return false;
     }
 
@@ -152,7 +152,6 @@ class WMMerchantCallback
      */
     private function generateHASH()
     {
-        // Генерируем HASH
         $string = $this->payee_purse.
             number_format($this->data['LMI_PAYMENT_AMOUNT'], 2, '.', '').
             $this->data['LMI_PAYMENT_NO'].

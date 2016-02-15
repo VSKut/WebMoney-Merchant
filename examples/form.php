@@ -1,9 +1,11 @@
 <?php
-require_once  '../src/WMMerchantForm.class.php';
+require_once('../src/WMMerchantForm.class.php');
 
+// Используем пространство имён
+use VSKut\WebMoney_Merchant;
 
 // Передаём кошелёк продавца
-$merchantForm = new WMMerchantForm('R000000000000');
+$merchantForm = new WebMoney_Merchant\WMMerchantForm('R000000000000');
 
 
 // Устанавливаем сумму для оплаты

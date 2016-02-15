@@ -1,0 +1,18 @@
+{
+  "name": "VSKut/WebMoney-Merchant",
+  "description": "WebMoney Merchant - PHP Library",
+  "keywords": ["webmoney", "web money", "mechant", "wmtransfer", "transfer"],
+  "license": "MIT",
+  "homepage": "https://github.com/VSKut/WebMoney-Merchant",
+  "authors": [
+    {
+      "name": "VSKut",
+      "email": "me@vskut.ru"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "VSKut\\WebMoney_Merchant\\": ""
+    }
+  }
+}

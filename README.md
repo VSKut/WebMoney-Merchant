@@ -2,21 +2,47 @@
 
 Эта библиотека должна помочь вам в работе с интерфейсом WebMoney Merchant: https://wiki.webmoney.ru/projects/webmoney/wiki/Web_Merchant_Interface
 
-# Примеры
+# Использование
+
+## Установка
+1. Устанавливаем [Composer](http://getcomposer.org/):
+
+    ```
+    curl -sS https://getcomposer.org/installer | php
+    ```
+
+2. Добавляем WebMoney Merchant в зависимость:
+
+    ```
+    php composer.phar require VSKut/WebMoney-Merchant:*
+    ```
+
 
 ## Генерация формы
 
 Пример: https://github.com/VSKut/WebMoney-Merchant/blob/master/examples/form.php
 
 **Подключаем класс любым доступным образом**
+
+Native:
 ```php
-require_once  '../src/WMMerchantForm.class.php';
+require_once('../src/WMMerchantForm.class.php');
+```
+
+Composer:
+```php
+require_once(__DIR__.'/vendor/autoload.php');
+```
+
+**Используем пространство имён**
+```php
+use VSKut\WebMoney_Merchant;
 ```
 
 **Передаём кошелёк продавца**
 ```php
 
-$merchantForm = new WMMerchantForm('R000000000000');
+$merchantForm = new WebMoney_Merchant\WMMerchantForm('R000000000000');
 ```
 
 **Устанавливаем сумму для оплаты**
@@ -100,14 +126,28 @@ echo $html;
 Пример: https://github.com/VSKut/WebMoney-Merchant/blob/master/examples/result.php
 
 **Подключаем класс любым доступным образом**
+
+Native:
 ```php
-require_once  '../src/WMMerchantCallback.class.php';
+require_once('../src/WMMerchantCallback.class.php');
 ```
+
+Composer:
+```php
+require_once(__DIR__.'/vendor/autoload.php');
+```
+
+
+**Используем пространство имён**
+```php
+use VSKut\WebMoney_Merchant;
+```
+
 
 **Передаём кошелёк продавца, секретный ключ, POST данные**
 ```php
 
-$merchantCallback = new WMMerchantCallback('R000000000000', '000000000000000', $_POST);
+$merchantCallback = new WebMoney_Merchant\WMMerchantCallback('R000000000000', '000000000000000', $_POST);
 ```
 
 
