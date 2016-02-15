@@ -1,7 +1,5 @@
 # О библиотеке WebMoney Merchant
 
-test
-
 Эта библиотека должна помочь вам в работе с интерфейсом WebMoney Merchant: https://wiki.webmoney.ru/projects/webmoney/wiki/Web_Merchant_Interface
 
 # Использование
