@@ -3,6 +3,18 @@
 Эта библиотека должна помочь вам в работе с интерфейсом WebMoney Merchant: https://wiki.webmoney.ru/projects/webmoney/wiki/Web_Merchant_Interface
 
 
+### Навигация
+
+1. [О библиотеке WebMoney Merchant](https://github.com/VSKut/WebMoney-Merchant#О-библиотеке-webmoney-merchant)
+    * [Навигация](https://github.com/VSKut/WebMoney-Merchant#Навигация)
+2. [Установка через Composer](https://github.com/VSKut/WebMoney-Merchant#Установка-через-composer)
+2. [Использование](https://github.com/VSKut/WebMoney-Merchant#Использование)
+    * [Генерация формы](https://github.com/VSKut/WebMoney-Merchant#Генерация-формы)
+    * [RESULT обработчик](https://github.com/VSKut/WebMoney-Merchant#result-обработчик)
+3. [Настройка WebMoney Merchant](https://github.com/VSKut/WebMoney-Merchant#Настройка-webmoney-merchant)
+    * [Переходим к настройке кошелька](https://github.com/VSKut/WebMoney-Merchant#Переходим-к-настройке-кошелька)
+    * [Настройка кошелька](https://github.com/VSKut/WebMoney-Merchant#Настройка-кошелька)
+
 # Установка через Composer
 1. Устанавливаем [Composer](http://getcomposer.org/):
 
@@ -18,7 +30,7 @@
 
 # Использование
 
-## Генерация формы
+### Генерация формы
 
 Пример: https://github.com/VSKut/WebMoney-Merchant/blob/master/examples/form.php
 
@@ -121,7 +133,7 @@ echo $html;
 ```
 
 
-## RESULT обработчик
+### RESULT обработчик
 
 Пример: https://github.com/VSKut/WebMoney-Merchant/blob/master/examples/result.php
 
@@ -194,20 +206,20 @@ if ($merchantCallback->isPreRequest()) {
 
 # Настройка WebMoney Merchant
 
-## Переходим к настройке кошелька
+### Переходим к настройке кошелька
 1. Переходим на https://merchant.webmoney.ru
 2. Проходим авторизацию
 3. Идём в настройки https://merchant.webmoney.ru/conf/purses.asp
-4. Напротив нужного кошелька выбираем "**настроить**"
+4. Напротив нужного кошелька выбираем `настроить`
 
-## Настройка кошелька
-1. Указываем "**тестовый**" либо "**рабочий**" режим работы
+### Настройка кошелька
+1. Указываем `тестовый` либо `рабочий` режим работы
 2. Указываем торговое имя
-3. Указываем "**Secret Key**"
-4. Указываем "**Result URL**"
-5. Выбираем check-box "**Передавать параметры в предварительном запросе**"
-6. Указываем "**Success URL**" и метод его вызова
-7. Указываем "**Fail URL**" и метод его вызова
-8. При необходимости выбираем check-box "**Позволять использовать URL, передаваемые в форме**"
-9. Выбираем в **Метод формирования контрольной подписи** - "**SHA256**"
-10. **Сохраняем :)**
+3. Указываем `Secret Key`
+4. Указываем `Result URL`
+5. Выбираем check-box [x] `Передавать параметры в предварительном запросе`
+6. Указываем `Success URL` и метод его вызова
+7. Указываем `Fail URL` и метод его вызова
+8. При необходимости выбираем check-box [x] `Позволять использовать URL, передаваемые в форме`
+9. Выбираем в `Метод формирования контрольной подписи` - `SHA256`
+10. Сохраняем :)
