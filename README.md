@@ -14,7 +14,7 @@
 2. Добавляем WebMoney Merchant в зависимость:
 
     ```
-    php composer.phar require vskut/webmoney-merchant:*@dev
+    php composer.phar require vskut/webmoney-merchant
     ```
 
 
