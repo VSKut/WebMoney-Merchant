@@ -36,13 +36,13 @@ require_once(__DIR__.'/vendor/autoload.php');
 
 **Используем пространство имён**
 ```php
-use VSKut\WebMoney_Merchant;
+use VSKut\WebMoney_Merchant\WMMerchantForm;
 ```
 
 **Передаём кошелёк продавца**
 ```php
 
-$merchantForm = new WebMoney_Merchant\WMMerchantForm('R000000000000');
+$merchantForm = new WMMerchantForm('R000000000000');
 ```
 
 **Устанавливаем сумму для оплаты**
@@ -140,14 +140,14 @@ require_once(__DIR__.'/vendor/autoload.php');
 
 **Используем пространство имён**
 ```php
-use VSKut\WebMoney_Merchant;
+use VSKut\WebMoney_Merchant\WMMerchantCallback;
 ```
 
 
 **Передаём кошелёк продавца, секретный ключ, POST данные**
 ```php
 
-$merchantCallback = new WebMoney_Merchant\WMMerchantCallback('R000000000000', '000000000000000', $_POST);
+$merchantCallback = new WMMerchantCallback('R000000000000', '000000000000000', $_POST);
 ```
 
 

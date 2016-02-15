@@ -2,10 +2,10 @@
 require_once('../src/WMMerchantCallback.class.php');
 
 // Используем пространство имён
-use VSKut\WebMoney_Merchant;
+use VSKut\WebMoney_Merchant\WMMerchantCallback;
 
 // Передаём кошелёк продавца, секретный ключ, POST данные
-$merchantCallback = new WebMoney_Merchant\WMMerchantCallback('R000000000000', '000000000000000', $_POST);
+$merchantCallback = new WMMerchantCallback('R000000000000', '000000000000000', $_POST);
 
 
 /*

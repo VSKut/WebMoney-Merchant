@@ -2,10 +2,10 @@
 require_once('../src/WMMerchantForm.class.php');
 
 // Используем пространство имён
-use VSKut\WebMoney_Merchant;
+use VSKut\WebMoney_Merchant\WMMerchantForm;
 
 // Передаём кошелёк продавца
-$merchantForm = new WebMoney_Merchant\WMMerchantForm('R000000000000');
+$merchantForm = new WMMerchantForm('R000000000000');
 
 
 // Устанавливаем сумму для оплаты
