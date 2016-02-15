@@ -158,7 +158,6 @@ use VSKut\WebMoney_Merchant\WMMerchantCallback;
 
 **Передаём кошелёк продавца, секретный ключ, POST данные**
 ```php
-
 $merchantCallback = new WMMerchantCallback('R000000000000', '000000000000000', $_POST);
 ```
 
