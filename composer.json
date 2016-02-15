@@ -10,8 +10,6 @@
       "email": "me@vskut.ru"
     }
   ],
-  "minimum-stability": "dev",
-  "preferred-install": "dev",
   "autoload": {
     "psr-4": {
       "VSKut\\WebMoney_Merchant\\": ""
