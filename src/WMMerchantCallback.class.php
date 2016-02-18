@@ -14,6 +14,7 @@ class WMMerchantCallback
     private $amount;
 
     private $data = array();
+    private $data_custom = array();
 
     private $pre_request = false;
 
@@ -47,6 +48,12 @@ class WMMerchantCallback
         $this->payee_purse = $payee_purse;
         $this->secret_key = $secret_key;
         $this->data = $data;
+
+        foreach ($data as $key => $value) {
+            if (substr($key, 0, 7) == 'CUSTOM_') {
+                $this->data_custom[ str_replace('CUSTOM_', '', $key) ] = $value;
+            }
+        }
     }
 
     /**
@@ -67,6 +74,16 @@ class WMMerchantCallback
     public function getData()
     {
         return $this->data;
+    }
+
+    /**
+     * Get Data custom
+     *
+     * @return array
+     */
+    public function getDataCustom()
+    {
+        return $this->data_custom;
     }
 
     /**

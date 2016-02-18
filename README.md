@@ -187,6 +187,13 @@ if ($merchantCallback->isPreRequest()) {
     /*
      * * Пришёл предварительный запрос, деньги от пользователя ещё не переведены
      * 1) Если нужно, то выполняем любые иные проверки
+     * */
+
+     $array = $merchantCallback->getData();
+
+     $array = $merchantCallback->getDataCustom();
+
+     /*
      * 2) Возвращаем успешный ответ "YES" и тем самым разрешаем выполнить запрос
      * */
 
@@ -197,6 +204,13 @@ if ($merchantCallback->isPreRequest()) {
     /*
      * * Пришёл окончательный запрос, деньги уже у нас на кошельке
      * 1) Если нужно, то выполняем любые иные проверки
+     * */
+
+     $array = $merchantCallback->getData();
+
+     $array = $merchantCallback->getDataCustom();
+
+     /*
      * 2) Производим выдачу товара
      * */
 
