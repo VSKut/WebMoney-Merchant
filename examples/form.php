@@ -21,7 +21,7 @@ $merchantForm->setPaymentNumber(12);
 
 
 // Устанавливаем дополнительные параметры (не обязательно)
-$merchantForm->setCustom(array(
+$merchantForm->setDataCustom(array(
     'USER_ID' => 15,
     'ITEM_ID' => 24,
     'CATEGORY_ID' => 1,

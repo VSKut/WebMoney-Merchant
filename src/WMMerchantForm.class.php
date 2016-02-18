@@ -76,11 +76,11 @@ class WMMerchantForm
     }
 
     /**
-     * Set custom values
+     * Set data custom values
      *
      * @param array $array
      */
-    public function setCustom($array)
+    public function setDataCustom($array)
     {
         $this->custom = $array;
     }
