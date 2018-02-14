@@ -151,8 +151,8 @@ class WMMerchantForm
             $html.= '<input type="hidden" name="CUSTOM_'.$key.'" value="'.$value.'">';
         }
 
-        $html.= '<input type="submit" value="Submit">'.
-                '</form>';
+        if (!$this->send_form) $html.= '<input type="submit" value="Submit">';
+        $html.= '</form>';
 
         if ($this->send_form) $html.= '<script>document.forms["WMMerchant_form"].submit()</script>';
 
